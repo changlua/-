@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:46 +0800] "GET /changlu_ssm_web HTTP/1.1" 302 - http-bio-8888-exec-1 0
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:46 +0800] "GET /changlu_ssm_web/ HTTP/1.1" 302 - http-bio-8888-exec-2 59
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:47 +0800] "GET /changlu_ssm_web/login.jsp HTTP/1.1" 200 2648 http-bio-8888-exec-3 735
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:52 +0800] "POST /changlu_ssm_web/login HTTP/1.1" 302 - http-bio-8888-exec-6 754
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:52 +0800] "GET /changlu_ssm_web/failer.jsp HTTP/1.1" 200 12806 http-bio-8888-exec-7 116
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:54 +0800] "GET /changlu_ssm_web/login.jsp HTTP/1.1" 200 2648 http-bio-8888-exec-8 2
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:40:58 +0800] "POST /changlu_ssm_web/login HTTP/1.1" 200 14359 http-bio-8888-exec-9 441
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:14:41:29 +0800] "GET /changlu_ssm_web/sysLog/findAll.do HTTP/1.1" 200 21889 http-bio-8888-exec-10 213

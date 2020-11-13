@@ -1,0 +1,7 @@
+com\changlu\ssm\controller\PermissionController.class
+com\changlu\ssm\controller\ProductController.class
+com\changlu\ssm\controller\OrdersController.class
+com\changlu\ssm\controller\LogAop.class
+com\changlu\ssm\controller\SysLogController.class
+com\changlu\ssm\controller\UsersController.class
+com\changlu\ssm\controller\RoleController.class

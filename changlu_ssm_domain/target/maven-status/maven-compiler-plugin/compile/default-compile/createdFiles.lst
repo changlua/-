@@ -1,0 +1,8 @@
+com\changlu\ssm\domain\SysLog.class
+com\changlu\ssm\domain\UserInfo.class
+com\changlu\ssm\domain\Permission.class
+com\changlu\ssm\domain\Orders.class
+com\changlu\ssm\domain\Traveller.class
+com\changlu\ssm\domain\Product.class
+com\changlu\ssm\domain\Member.class
+com\changlu\ssm\domain\Role.class

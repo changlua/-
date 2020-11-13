@@ -1,0 +1,8 @@
+com\changlu\ssm\dao\IRoleDao.class
+com\changlu\ssm\dao\IPermissionDao.class
+com\changlu\ssm\dao\IProductDao.class
+com\changlu\ssm\dao\IMemberDao.class
+com\changlu\ssm\dao\ITravellerDao.class
+com\changlu\ssm\dao\IUserDao.class
+com\changlu\ssm\dao\IOrdersDao.class
+com\changlu\ssm\dao\ISysLogDao.class
