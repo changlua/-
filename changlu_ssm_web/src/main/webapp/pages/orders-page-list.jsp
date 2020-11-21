@@ -273,37 +273,6 @@
 							</table>
 							<!--数据列表/-->
 
-							<!--工具栏-->
-							<div class="pull-left">
-								<div class="form-group form-inline">
-									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建">
-											<i class="fa fa-file-o"></i> 新建
-										</button>
-										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> 删除
-										</button>
-										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> 开启
-										</button>
-										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> 屏蔽
-										</button>
-										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="box-tools pull-right">
-								<div class="has-feedback">
-									<input type="text" class="form-control input-sm"
-										placeholder="搜索"> <span
-										class="glyphicon glyphicon-search form-control-feedback"></span>
-								</div>
-							</div>
-							<!--工具栏/-->
-
 						</div>
 						<!-- 数据表格 /-->
 
@@ -506,6 +475,25 @@
 				}
 				$(this).data("clicks", !clicks);
 			});
+
+			//动态获取到当前页显示的条目数
+            function getQueryVariable(variable)
+            {
+                var query = window.location.search.substring(1);//获得了当前链接的中?号后的参数
+                var vars = query.split("&");//分割&号 vars中包含了多个参数对
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if(pair[0] == variable){return pair[1];}//如果参数对中的键与传入的键相符合，那么返回对应的值
+                }
+                return(false);
+            }
+            var pageSize = getQueryVariable("pageSize");//获取到请求参数中的pageSize值
+            var ops = document.getElementById("changePageSize");//获取到对应的select标签
+            for(var i=0;i<ops.length;i++){
+				if(ops.options[i].value == pageSize){//根据对应标签中的option的值来进行判断，如果相等那么就设置其selected为true
+				    ops.options[i].setAttribute("selected","true");//设置为true
+				}
+			}
 		});
 	</script>
 </body>
